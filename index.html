@@ -1,13 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Russian Lessons in Cyprus</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Russian Lessons in Cyprus | Small groups, online or in person</title>
+<meta name="description" content="Russian lessons in Cyprus in small groups of up to four. For foreigners and native speakers. Pancyprian exam preparation, everyday life and work. Online or in person.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--red:#B3202A;--red-d:#8E1922;--ink:#2A2A2D;--mut:#5E5E63;--line:#DEDEDB;--soft:#F4F4F2;--white:#fff}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--white);color:var(--ink);font:400 1.0625rem/1.65 "Source Sans 3","Segoe UI",system-ui,sans-serif}
+h1,h2,h3,.logo{font-family:"Source Serif 4",Georgia,"Times New Roman",serif;line-height:1.2}
+a{color:var(--red)}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+header{position:sticky;top:0;z-index:10;background:var(--white);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
+.logo{font-weight:700;font-size:1.15rem;color:var(--ink);text-decoration:none}.logo span{color:var(--red)}
+.links{display:flex;align-items:center;gap:26px}
+.links a:not(.btn){color:var(--mut);text-decoration:none;font-weight:600}.links a:not(.btn):hover{color:var(--red)}
+.btn{display:inline-block;padding:13px 26px;border-radius:6px;font:700 1rem "Source Sans 3",sans-serif;text-decoration:none;border:2px solid var(--red);cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.btn.pri{background:var(--red);color:#fff}.btn.pri:hover{background:var(--red-d);border-color:var(--red-d)}
+.btn.sec{background:transparent;color:var(--red)}.btn.sec:hover{background:var(--red);color:#fff}
+.btn.sm{padding:9px 18px;font-size:.95rem}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:center;padding:76px 0 84px}
+h1{font-size:clamp(2.1rem,4.6vw,3.35rem);font-weight:700;margin-bottom:20px}
+.sub{color:var(--mut);font-size:1.2rem;max-width:30em;margin-bottom:32px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.facts{background:var(--soft);border-top:4px solid var(--red);padding:26px 28px}
+.facts h2{font-size:1.1rem;margin-bottom:6px}
+.facts dl{margin:0}.facts div{padding:12px 0;border-bottom:1px solid var(--line)}.facts div:last-child{border:0;padding-bottom:0}
+.facts dt{font-size:.9rem;color:var(--mut)}.facts dd{margin:0;font-weight:600}
+section{padding:76px 0}
+.alt{background:var(--soft)}
+h2{font-size:clamp(1.55rem,3vw,2.1rem);font-weight:700;margin-bottom:12px}
+.lead{color:var(--mut);max-width:36em;margin-bottom:38px}
+.rows>div{display:grid;grid-template-columns:.85fr 1.15fr;gap:32px;padding:26px 0;border-top:1px solid var(--line)}
+.rows>div:last-child{border-bottom:1px solid var(--line)}
+.rows h3{font-size:1.25rem}.rows p{color:var(--mut)}
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.how h3{font-size:1.15rem;margin-bottom:8px;padding-top:14px;border-top:3px solid var(--red)}
+.how p{color:var(--mut)}
+.teacher{display:grid;grid-template-columns:.7fr 1.3fr;gap:56px;align-items:start}
+.photo{aspect-ratio:4/5;background:var(--white);border:2px dashed #B9B9B5;display:grid;place-items:center;text-align:center;color:var(--mut);padding:16px;font-size:.95rem}
+.teacher p{margin-bottom:16px}
+.todo{background:#FDECEC;border-bottom:1px dashed var(--red);padding:0 3px}
+.creds{list-style:none;padding:0;margin:22px 0 0}.creds li{padding:10px 0;border-top:1px solid var(--line)}.creds li:last-child{border-bottom:1px solid var(--line)}
+form{max-width:700px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.f{margin-bottom:18px}
+.f label{display:block;font-weight:600;margin-bottom:6px}
+.f input,.f select,.f textarea{width:100%;padding:12px 13px;border:1px solid #B9B9B5;border-radius:6px;background:var(--white);font:inherit;color:var(--ink)}
+.f textarea{min-height:120px;resize:vertical}
+.f input:focus,.f select:focus,.f textarea:focus{outline:0;border-color:var(--red);box-shadow:0 0 0 3px rgba(179,32,42,.18)}
+.check{display:flex;gap:10px;align-items:flex-start;color:var(--mut);font-size:.95rem;margin-bottom:22px}.check input{margin-top:6px;accent-color:var(--red)}
+#status{margin-top:14px;font-weight:600;color:var(--red-d);min-height:1.6em}
+footer{padding:34px 0;border-top:1px solid var(--line);color:var(--mut);font-size:.95rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media(max-width:860px){.hero{grid-template-columns:1fr;gap:36px;padding:48px 0 56px}.links a:not(.btn){display:none}.how,.teacher{grid-template-columns:1fr;gap:28px}.teacher .photo{max-width:260px}.rows>div{grid-template-columns:1fr;gap:6px}section{padding:56px 0}}
+@media(max-width:560px){.row{grid-template-columns:1fr;gap:0}.logo{font-size:1rem}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+</style>
 </head>
 <body>
-  <h1>Russian Lessons in Cyprus</h1>
-  <p>Find teachers, courses and resources.</p>
+<header><div class="wrap nav">
+  <a class="logo" href="#top">Russian lessons <span>in Cyprus</span></a>
+  <div class="links"><a href="#lessons">Lessons</a><a href="#teacher">Your teacher</a><a href="#contact">Contact</a><a class="btn pri sm" href="#contact">Book a trial</a></div>
+</div></header>
+
+<main id="top">
+<div class="wrap hero">
+  <div>
+    <h1>Russian lessons in Cyprus, in small groups of up to four</h1>
+    <p class="sub">For foreigners learning Russian and for native speakers who want to read and write it properly. Lessons online or in person, taught by one teacher who knows every student.</p>
+    <div class="cta"><a class="btn pri" href="#contact">Book a free trial lesson</a><a class="btn sec" href="#teacher">Meet your teacher</a></div>
+  </div>
+  <aside class="facts" aria-label="Lessons at a glance">
+    <h2>Lessons at a glance</h2>
+    <dl>
+      <div><dt>Format</dt><dd>Online or in person</dd></div>
+      <div><dt>Group size</dt><dd>Up to 4 students</dd></div>
+      <div><dt>Students</dt><dd>Foreigners and native speakers</dd></div>
+      <div><dt>Goals</dt><dd>Pancyprian exams, work, everyday life</dd></div>
+    </dl>
+  </aside>
+</div>
+
+<section id="lessons" class="alt"><div class="wrap">
+  <h2>What you can study</h2>
+  <p class="lead">Every group is built around a shared goal, so the lessons stay useful for everyone in the room.</p>
+  <div class="rows">
+    <div><h3>Russian for foreigners</h3><p>Start with the alphabet or continue from where you are now. You practise speaking, listening, reading and writing at your own level.</p></div>
+    <div><h3>Russian for native speakers</h3><p>You speak Russian at home but reading, spelling and grammar feel harder. We work on literacy and confident written Russian.</p></div>
+    <div><h3>Pancyprian exam preparation</h3><p>Focused preparation for the Russian exam in the <span lang="el">Παγκύπριες Εξετάσεις</span>, planned around your exam date.</p></div>
+    <div><h3>Personal life and work</h3><p>Russian for family, friends, travel and daily life, or for clients, colleagues and business correspondence.</p></div>
+  </div>
+</div></section>
+
+<section id="how"><div class="wrap">
+  <h2>How the lessons work</h2>
+  <p class="lead">Simple, predictable and easy to fit around your week.</p>
+  <div class="how">
+    <div><h3>Groups of up to four</h3><p>Small groups mean you speak in every lesson and get personal attention and corrections.</p></div>
+    <div><h3>Online or in person</h3><p>Join from home or meet face to face. Tell us what suits you when you book.</p></div>
+    <div><h3>Start with a trial lesson</h3><p>Try a lesson first. We talk about your goals and find the right group and level for you.</p></div>
+  </div>
+</div></section>
+
+<section id="teacher" class="alt"><div class="wrap teacher">
+  <div class="photo" role="img" aria-label="Teacher photo goes here">Teacher photo<br>(replace this box with an image)</div>
+  <div>
+    <h2>Your teacher</h2>
+    <p>Hello, I am <span class="todo">[Teacher name]</span>. <span class="todo">[Write 2 to 3 sentences: you are a native Russian speaker, how long you have taught, and why you teach in small groups.]</span></p>
+    <p><span class="todo">[Add what students can expect: how you plan lessons, how you give feedback, and how you support students preparing for exams.]</span></p>
+    <ul class="creds">
+      <li><strong>Education:</strong> <span class="todo">[add your degree or qualifications]</span></li>
+      <li><strong>Experience:</strong> <span class="todo">[add years of teaching and the students you have worked with]</span></li>
+      <li><strong>Languages:</strong> <span class="todo">[for example: Russian, Greek, English]</span></li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <h2>Book a free trial lesson</h2>
+  <p class="lead">Send a few details and you will get a reply with available times.</p>
+  <form id="form">
+    <div class="row">
+      <div class="f"><label for="name">Your name</label><input id="name" name="name" required autocomplete="name"></div>
+      <div class="f"><label for="email">Email address</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+    </div>
+    <div class="row">
+      <div class="f"><label for="goal">What do you want to study?</label>
+        <select id="goal" name="goal" required><option value="" disabled selected>Choose one</option><option>Russian for foreigners</option><option>Russian for native speakers</option><option>Pancyprian exam preparation</option><option>Personal life and work</option></select></div>
+      <div class="f"><label for="format">Online or in person?</label>
+        <select id="format" name="format" required><option value="" disabled selected>Choose one</option><option>Online</option><option>In person</option><option>Either works</option></select></div>
+    </div>
+    <div class="f"><label for="message">Tell me about your level and goals (optional)</label><textarea id="message" name="message"></textarea></div>
+    <label class="check"><input type="checkbox" name="consent" required><span>I agree to be contacted about my enquiry. My details are used only to reply.</span></label>
+    <button class="btn pri" type="submit">Send my request</button>
+    <p id="status" role="status"></p>
+  </form>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>Russian lessons in Cyprus. Online and in person.</span><span>Contact: <a href="mailto:hello@example.com">hello@example.com</a></span></div></footer>
+
+<script>
+// Set FORM_ENDPOINT to a Formspree URL (https://formspree.io/f/xxxx) to receive submissions.
+// Until then the form opens the visitor's email app addressed to CONTACT_EMAIL.
+const CONTACT_EMAIL="hello@example.com",FORM_ENDPOINT="";
+const form=document.getElementById('form'),st=document.getElementById('status');
+form.addEventListener('submit',async e=>{
+  e.preventDefault();
+  const d=Object.fromEntries(new FormData(form));
+  if(FORM_ENDPOINT){
+    try{
+      const r=await fetch(FORM_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(d)});
+      if(!r.ok)throw new Error();
+      form.reset();st.textContent='Thank you. I will reply with trial lesson times soon.';
+    }catch(err){st.textContent='The message was not sent. Check your connection and try again.';}
+    return;
+  }
+  const body=`Name: ${d.name}\nEmail: ${d.email}\nStudying: ${d.goal}\nFormat: ${d.format}\n\n${d.message||''}`;
+  location.href='mailto:'+CONTACT_EMAIL+'?subject='+encodeURIComponent('Trial lesson request')+'&body='+encodeURIComponent(body);
+  st.textContent='Opening your email app to send the request.';
+});
+</script>
 </body>
 </html>
